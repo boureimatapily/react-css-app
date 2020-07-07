@@ -224,7 +224,7 @@ const useStyles = makeStyles((theme) => ({
 
           <Link to="/">
             {" "}
-            <Button variant="contained" color="primary" className={classes.navButton}>Note</Button>{" "}
+            <Button variant="contained" color="primary" className={classes.navButton}>All CSS</Button>{" "}
           </Link>
                         
           <Link to="/login">
