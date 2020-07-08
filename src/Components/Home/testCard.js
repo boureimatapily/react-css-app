@@ -16,7 +16,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Style1 from "../../Components/StyleComponents/style1/Style1";
 import Style2 from "../../Components/StyleComponents/style2/Style2";
 import Style3 from "../../Components/StyleComponents/style3/Style3";
-import Style4 from "../../Components/StyleComponents/style4/Style4";
+// import Style4 from "../../Components/StyleComponents/style4/Style4";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -215,7 +215,7 @@ export default function VerticalTabs() {
           </ExpansionPanel>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={4} className={classes.tabvalue}>
+      {/* <TabPanel value={value} index={4} className={classes.tabvalue}>
         <Style4 />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
           <ExpansionPanel
@@ -241,7 +241,7 @@ export default function VerticalTabs() {
             </ExpansionPanelDetails>
           </ExpansionPanel>
         </div>
-      </TabPanel>
+      </TabPanel> */}
       <TabPanel value={value} index={5} className={classes.tabvalue}>
         Item Six
       </TabPanel>
