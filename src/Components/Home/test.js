@@ -25,7 +25,7 @@ export default function ControlledExpansionPanels() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
+  const handleChangePanel = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 

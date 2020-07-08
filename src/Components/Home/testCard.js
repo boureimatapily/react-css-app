@@ -122,7 +122,7 @@ export default function VerticalTabs() {
                 General settings
               </Typography>
               <Typography className={classes.secondaryHeading}>
-                <h1>click here!! to Get the code </h1>
+                
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
