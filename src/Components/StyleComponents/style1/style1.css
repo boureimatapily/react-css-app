@@ -20,8 +20,8 @@
   }
   
   p {
-    margin: 50px;
-    font-size: 65px;
+    
+  
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
@@ -33,6 +33,7 @@
   .logo-1 {
     color: white;
     animation: neon 3s infinite;
+    font-size: 50px;
   }
   
   @keyframes neon {

@@ -5,15 +5,18 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import test from "./test";
-import "../Home/Home.css";
-import { Link } from "react-router-dom";
 
+import "../Home/Home.css";
+// import { Link } from "react-router-dom";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
-
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+// import styles
+import Style1 from "../../Components/StyleComponents/style1/Style1";
+import Style2 from "../../Components/StyleComponents/style2/Style2";
+import Style3 from "../../Components/StyleComponents/style3/Style3";
+import Style4 from "../../Components/StyleComponents/style4/Style4";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -105,13 +108,12 @@ export default function VerticalTabs() {
 
       <TabPanel value={value} index={0} className={classes.tabvalue}>
         <div className="hcontainer">
-          <h4 style={{ marginBottom: 50 }}> All about awesome css style</h4>
+          <h4> Codetrain</h4>
         </div>
         <div>
           <ExpansionPanel
             expanded={expanded === "panel1"}
             onChange={handleChangePanel("panel1")}
-            style={{ marginTop: 50 }}
           >
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
@@ -119,38 +121,131 @@ export default function VerticalTabs() {
               id="panel1bh-header"
             >
               <Typography className={classes.heading}>
-                General settings
+                Codetrain Light
               </Typography>
               <Typography className={classes.secondaryHeading}>
-                
+                <h3>Click here to get the code </h3>
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              
-
-               
+                <h1> code</h1>
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1} className={classes.tabvalue}>
-        
+        <Style1 />
+
+        <div>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>Neon light</Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
+      <TabPanel value={value} index={2} className={classes.tabvalue}>
+        <Style2 />
+        <div style={{ marginTop: 50, marginBottom: 100 }}>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>
+                Awesome Codetrain
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
+      <TabPanel value={value} index={3} className={classes.tabvalue}>
+        <Style3 />
+        <div style={{ marginTop: 50, marginBottom: 100 }}>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>
+               Codetrain Refraction
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
+      <TabPanel value={value} index={4} className={classes.tabvalue}>
+        <Style4 />
+        <div style={{ marginTop: 50, marginBottom: 100 }}>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>
+               Make it come true
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={5} className={classes.tabvalue}>
         Item Six
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel value={value} index={6} className={classes.tabvalue}>
         Item Seven
       </TabPanel>
     </div>

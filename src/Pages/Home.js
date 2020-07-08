@@ -4,7 +4,7 @@ import { Container, Grid, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import "../Components/Home/Home.css";
 import ButtonAppBar from "../Components/Home/testCard";
-import Style3 from "../Components/StyleComponents/style3/Style3";
+//import Style3 from "../Components/StyleComponents/style3/Style3";
 
 
 
@@ -31,15 +31,14 @@ export default function Home() {
             <h4>  All about awesome css style</h4>
           </div>
         </Grid>
-        <Grid item xs={12} md={12} lg={12}>
+        {/* <Grid item xs={12} md={12} lg={12}>
           <Style3 />
        
-        </Grid>
-        
-
-        {/* <Grid item xs={12} md={12} lg={12} className={classes.note}>
-          <ButtonAppBar/>
         </Grid> */}
+        
+        <Grid item xs={12} md={12} lg={12} className={classes.note}>
+          <ButtonAppBar/>
+        </Grid>
 
        
       </Grid>
