@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style4.css"
 
-export default function style4() {
+export default function Style4() {
     return (
         <div className="mainStyle4">
             <div class="threeD">
