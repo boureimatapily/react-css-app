@@ -14,7 +14,7 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import StyleOne from "../StyleComponents/style1/StyleOne";
 import StyleTwo from "../StyleComponents/style2/StyleTwo";
-import StyleThree from "../StyleComponents/style3/StyleThree";
+//import StyleThree from "../StyleComponents/style3/StyleThree";
 import StyleFor from "../StyleComponents/style4/StyleFor";
 
 
@@ -190,7 +190,7 @@ export default function VerticalTabs() {
           </ExpansionPanel>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={3} className={classes.tabvalue}>
+      {/* <TabPanel value={value} index={3} className={classes.tabvalue}>
         <StyleThree />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
           <ExpansionPanel
@@ -216,7 +216,7 @@ export default function VerticalTabs() {
             </ExpansionPanelDetails>
           </ExpansionPanel>
         </div>
-      </TabPanel>
+      </TabPanel> */}
       <TabPanel value={value} index={4} className={classes.tabvalue}>
         <StyleFor />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
