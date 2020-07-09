@@ -12,10 +12,12 @@ import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Style3 from "../StyleComponents/style3/Style3";
-import Style4 from "../StyleComponents/style4/Style4";
-import Style1 from "../StyleComponents/style1/Style1"
-import Style2 from "../StyleComponents/style2/Style2"
+import StyleOne from "../StyleComponents/style1/StyleOne";
+import StyleTwo from "../StyleComponents/style2/StyleTwo";
+import StyleThree from "../StyleComponents/style3/StyleThree";
+import StyleFor from "../StyleComponents/style4/StyleFor";
+
+
 
 
 function TabPanel(props) {
@@ -136,7 +138,7 @@ export default function VerticalTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1} className={classes.tabvalue}>
-        <Style1 />
+        <StyleOne />
 
         <div>
           <ExpansionPanel
@@ -162,7 +164,7 @@ export default function VerticalTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={2} className={classes.tabvalue}>
-        <Style2 />
+        <StyleTwo />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}
@@ -189,7 +191,7 @@ export default function VerticalTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={3} className={classes.tabvalue}>
-        <Style3 />
+        <StyleThree />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}
@@ -216,7 +218,7 @@ export default function VerticalTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={4} className={classes.tabvalue}>
-        <Style4 />
+        <StyleFor />
         <div style={{ marginTop: 50, marginBottom: 100 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}

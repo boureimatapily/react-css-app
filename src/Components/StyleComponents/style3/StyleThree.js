@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style3.css"
 
-function Style3() {
+function StyleThree() {
     return (
         <div className="mainStyle3">
             <h1 aria-label="Madani"></h1>
@@ -9,4 +9,4 @@ function Style3() {
     )
 }
 
-export default  Style3
+export default  StyleThree

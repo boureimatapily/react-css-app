@@ -1,7 +1,7 @@
 import React from "react";
 import "./style2.css"
 
- function Style2() {
+ function StyleTwo() {
   return (
     
       <div className="main"> Codetrain </div>
@@ -9,4 +9,4 @@ import "./style2.css"
     
   );
 }
-export default Style2
+export default StyleTwo

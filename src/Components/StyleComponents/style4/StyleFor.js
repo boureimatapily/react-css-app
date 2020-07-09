@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style4.css"
 
-function Style4() {
+function StyleFor() {
     return (
         <div className="mainStyle4">
             <div class="threeD">
@@ -10,4 +10,4 @@ function Style4() {
         </div>
     )
 }
-export default Style4
+export default StyleFor
