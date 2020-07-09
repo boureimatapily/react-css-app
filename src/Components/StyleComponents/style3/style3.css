@@ -24,7 +24,7 @@ h1 {
 
 h1::before,
 h1::after {
-    content: attr(aria-label);
+    content: attr(id);
     position: absolute;
     top: 0;
     left: 0;
