@@ -1,64 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 .mainStyle3 {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
-	background-size: cover;
-    overflow: hidden;
+    background: #ddd;
+    background: linear-gradient(#ddd, #e8e8e8);
+    font-family: 'Open Sans', sans-serif;
+    height: 200px;
+    margin:0;
 }
 
-h1 {
-    position: relative;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 100px;
-    font-weight: 700;
-    color: #f5f5f5;
-    letter-spacing: 0.02em;
+.thumb {
+    width: 200px;
+    height: 100px;
+    margin: 10px auto;
+    perspective: 1000px;
+}
+
+.thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("https://d13yacurqjgara.cloudfront.net/users/269311/screenshots/1508393/the_optimist_lives_on_by_huanle-d6yprp1_o_1x.jpg");
+    background-size: 0, cover;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.thumb:hover a {
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+}
+.thumb a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    background: inherit;
+    background-size: cover, cover;
+    background-position: bottom;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.thumb a span {
+    color: white;
     text-transform: uppercase;
-    perspective: 500px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font: bold 12px/36px "Open Sans";
+    text-align: center;
+    transform: rotateX(-89.99deg);
+    transform-origin: top;
+    z-index: 1;
 }
-
-h1::before,
-h1::after {
-    content:"Madani";
+.thumb a:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
-    text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
 }
 
-h1::before {
-    animation: floatAbove 3.5s ease-in-out infinite;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+.thumb:hover a:before {
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 
-h1::after {
-    opacity: 0.65;
-    filter: blur(0.02em);
-    transform: translate(-50%, -50%) rotateX(21deg);
-    animation: floatBelow 3.5s ease-in-out infinite;
-    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
-}
 
-@keyframes floatAbove {
-    50% {
-        transform: translate(-50%, -60%);
-        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
-                clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
-    }
-}
-
-@keyframes floatBelow {
-    50% {
-        transform: translate(-50%, -60%) rotateX(10deg);
-        -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
-                clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
-    }
-}

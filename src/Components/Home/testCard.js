@@ -14,8 +14,9 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import StyleOne from "../StyleComponents/style1/StyleOne";
 import StyleTwo from "../StyleComponents/style2/StyleTwo";
-//import StyleThree from "../StyleComponents/style3/StyleThree";
 import StyleFor from "../StyleComponents/style4/StyleFor";
+import StyleThree from "../StyleComponents/style3/StyleThree";
+import StyleFive from "../StyleComponents/style5/Style5";
 
 
 
@@ -99,13 +100,13 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         className={classes.tabs}
       >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
-        <Tab label="Item Five" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="Style 1" {...a11yProps(0)} />
+        <Tab label="Style 2" {...a11yProps(1)} />
+        <Tab label="Style 3" {...a11yProps(2)} />
+        <Tab label="Style 4" {...a11yProps(3)} />
+        <Tab label="Style 5" {...a11yProps(4)} />
+        <Tab label="Style 6" {...a11yProps(5)} />
+        <Tab label="Style 7" {...a11yProps(6)} />
       </Tabs>
 
       <TabPanel value={value} index={0} className={classes.tabvalue}>
@@ -165,7 +166,7 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={2} className={classes.tabvalue}>
         <StyleTwo />
-        <div style={{ marginTop: 50, marginBottom: 100 }}>
+        <div style={{ marginTop: 50, marginBottom:20 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}
             onChange={handleChangePanel("panel1")}
@@ -190,9 +191,10 @@ export default function VerticalTabs() {
           </ExpansionPanel>
         </div>
       </TabPanel>
-      {/* <TabPanel value={value} index={3} className={classes.tabvalue}>
-        <StyleThree />
-        <div style={{ marginTop: 50, marginBottom: 100 }}>
+    
+      <TabPanel value={value} index={3} className={classes.tabvalue}>
+        <StyleFor />
+        <div style={{ marginTop: 50, marginBottom: 20 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}
             onChange={handleChangePanel("panel1")}
@@ -203,7 +205,7 @@ export default function VerticalTabs() {
               id="panel1bh-header"
             >
               <Typography className={classes.heading}>
-               Codetrain Refraction
+               Make it come true
               </Typography>
               <Typography className={classes.secondaryHeading}>
                 <h3>Click here to get the code </h3>
@@ -216,10 +218,10 @@ export default function VerticalTabs() {
             </ExpansionPanelDetails>
           </ExpansionPanel>
         </div>
-      </TabPanel> */}
+      </TabPanel>
       <TabPanel value={value} index={4} className={classes.tabvalue}>
-        <StyleFor />
-        <div style={{ marginTop: 50, marginBottom: 100 }}>
+      <StyleThree />
+        <div style={{ marginTop: 50, marginBottom: 20 }}>
           <ExpansionPanel
             expanded={expanded === "panel1"}
             onChange={handleChangePanel("panel1")}
@@ -245,10 +247,58 @@ export default function VerticalTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={5} className={classes.tabvalue}>
-        Item Six
+      <StyleFive />
+        <div style={{ marginTop: 10, marginBottom: 20 }}>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>
+               Make it come true
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={6} className={classes.tabvalue}>
-        Item Seven
+      <StyleFor />
+        <div style={{ marginTop: 50, marginBottom: 100 }}>
+          <ExpansionPanel
+            expanded={expanded === "panel1"}
+            onChange={handleChangePanel("panel1")}
+          >
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography className={classes.heading}>
+               Make it come true
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                <h3>Click here to get the code </h3>
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                <h1> code</h1>
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        </div>
       </TabPanel>
     </div>
   );
