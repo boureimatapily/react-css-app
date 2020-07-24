@@ -16,7 +16,7 @@ import StyleOne from "../StyleComponents/style1/StyleOne";
 import StyleTwo from "../StyleComponents/style2/StyleTwo";
 import StyleFor from "../StyleComponents/style4/StyleFor";
 import StyleThree from "../StyleComponents/style3/StyleThree";
-import StyleFive from "../StyleComponents/style5/StyleFiveive";
+import StyleFive from "../StyleComponents/style5/StyleFive";
 
 
 
