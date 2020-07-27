@@ -4,12 +4,12 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
+// import InputBase from '@material-ui/core/InputBase';
 
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+// import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import Button from "@material-ui/core/Button";
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
      
   },
   appbar:{
-    backgroundColor:"#810aff",
+    backgroundColor:"#3a13e8",
     color:"white",
     fontWeight:"bolder"
   },
@@ -178,7 +178,7 @@ const useStyles = makeStyles((theme) => ({
           <Typography className={classes.title} variant="h6" noWrap>
             CSS STYLE APP
           </Typography>
-          <div className={classes.search}>
+          {/* <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -190,7 +190,7 @@ const useStyles = makeStyles((theme) => ({
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
-          </div>
+          </div> */}
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
 
