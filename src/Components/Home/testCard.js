@@ -140,9 +140,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h3> code</h3>
-              </Typography>
+              
               <FirstCode file={styleOne} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -167,9 +165,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+            
               <FirstCode file={styleTwo} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -195,9 +191,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+             
               <FirstCode file={styleThree} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -224,9 +218,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+             
               <FirstCode file={styleFor} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -252,9 +244,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+              
               <FirstCode file={styleFive} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -280,9 +270,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+             
               <FirstCode file={styleSix} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -308,9 +296,7 @@ export default function VerticalTabs() {
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <Typography>
-                <h1> code</h1>
-              </Typography>
+             
               <FirstCode file={styleFor} />
             </ExpansionPanelDetails>
           </ExpansionPanel>
